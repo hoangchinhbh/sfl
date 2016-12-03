@@ -1,0 +1,30 @@
+
+/* Force the header to be light, with dark text title */
+#section-header{background: none transparent;}
+.sf-menu li {background-color: rgba(0, 0, 0, 0.2);}
+#section-header h1.site-title, .page-caption strong {color: #222; font-weight: 100;}
+
+/* Quick Left-Align the Header */
+.site-title-wrapper, #menu, .full-width .page-title, .full-width .entry-title, .full-width .entry-meta, .full-width .breadcrumbs {
+    text-align: left;
+}
+
+
+/* Slide the sidebar up and add a BG color (useful with the left-align snippet on blog pages) */
+@media only screen and (min-width: 959px) {	
+
+.sidebar > * {
+    padding: 0 20px;
+    width: 88%;
+}
+.sidebar {
+    background: none repeat scroll 0 0 #EEEEEE;
+    box-shadow: 0 0 1px #DDDDDD inset;
+    margin-top: -162px;
+    padding-top: 30px;
+}
+.sidebar hr.partial-bottom {
+    border-top: 1px solid #DDDDDD !important;
+}
+
+}

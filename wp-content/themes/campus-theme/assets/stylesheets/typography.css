@@ -1,0 +1,186 @@
+/* =============================================================================
+   Basic HTML
+   ========================================================================== */
+
+@import url(https://fonts.googleapis.com/css?family=Roboto+Slab:400,300,700);
+
+html { font-size: 62.5%; 
+	-webkit-font-smoothing:antialiased;
+    -moz-font-smoothing:antialiased;
+    font-smoothing:antialiased;
+    text-rendering:optimizeLegibility;
+} 
+
+body { 
+	font: 14px/155% 'Helvetica Neue', Arial, 'Liberation Sans', FreeSans, sans-serif; 
+	font-size: 14px; font-size: 1.4rem; /* =14px */
+}
+
+pre, code { font-family: 'DejaVu Sans Mono', Menlo, Consolas, monospace; }
+
+h1, h1 span, h2, h3, h4, h5,
+#grid-filter, #grid-filter a.button, 
+.highlight-row span, .page-caption, 
+.sf-menu > li > a strong, 
+.sf-menu ul li a, 
+.sf-menu ul li li a, 
+.tk-museo-slab, 
+.wpb_content_element .wpb_accordion_header a, 
+.wpb_content_element .wpb_tour_tabs_wrapper .wpb_tabs_nav a  {
+  font-family: "Roboto Slab";
+  font-weight: 300;
+}
+
+/* Font Sizes for the Entire Theme */
+h1 { font-size: 36px; font-size: 3.6rem; font-weight: 300; }
+h2 { font-size: 24px; font-size: 2.2rem; font-weight: 300; }
+h3 { font-size: 18px; font-size: 1.8rem; }
+h4 { font-size: 16px; font-size: 1.6rem; }
+h5 { font-size: 14px; font-size: 1.4rem; }
+h6 { font-size: 12px; font-size: 1.2rem; }
+
+h1, h2, h3, h4, h5{line-height: 100%; margin-bottom: 1rem;}
+h1.page-title, h1.entry-title{margin-bottom: 0.1rem;}
+
+blockquote{font-size: 28px; font-size: 2.8rem; font-weight: 300;}
+
+#grid-filter a.button{font-size: 14px; font-size: 1.4rem;}
+.wp-caption-text{font-size: 11px; font-size: 1.1rem;}
+
+/* Small Fonts */
+#section-tophat,
+#page-links,
+.author-wrapper, 
+.meta-wrapper, 
+.hybrid p{font-size: 12px; font-size: 1.2rem;}
+
+
+/* Colors - Set a default color for links until the user picks one */
+a{color: #07416a;} 									/* LINK COLOR */
+a:hover{color: #07416a;}							/* HOVER COLOR */
+a:visited{color: #07416a;}							/* VISITED COLOR */
+
+/* Colors - BUTTON / TAG / CATEGORY STYLING (Colored BG, White Text, That's Racist!) */
+a[rel~="category"], a[rel~="category"]:hover, a[rel~="category"]:visited, 
+.read_more_button, .read_more_button:hover, .read_more_button:visited,
+.tagcloud a, .tagcloud a:hover, .tagcloud a:visited,
+.action_button a, .action-button a:visited {
+    background: none repeat scroll 0 0 #008fd5;		 /* LINK COLOR */
+    color: white;
+    display: inline-block;
+    font-size: 1.1rem !important;
+    font-weight: bold;
+    margin-top: 6px;
+    padding: 4px 8px;
+    text-transform: uppercase;
+}
+
+.action_button a, .action-button a:visited {
+    font-family: 'Calibri', inherit;
+    font-size: 1.2rem;
+    font-weight: 800;
+    text-transform: none;
+}
+
+a[rel~="category"]:hover,
+.read_more_button:hover,
+.tagcloud a:hover,
+.action_button a:hover{
+	background: none repeat scroll 0 0 #00abff;	 	/* HOVER COLOR */
+}
+
+.action_button, .action_button:hover{display: inline-block; margin: 0 5px 15px 0; position: relative; bottom: 20px;}
+.action_button a, .action_button:visited a{background: rgba(0,0,0,0.1); color: white; padding: 10px;}
+/* .action_button a{box-shadow: 0 -3px rgba(0, 0, 0, 0.2) inset;} */
+
+
+/* =============================================================================
+   Special Hard-Wired Text (requires a custom color and size)
+   ========================================================================== */
+#section-page-caption h1{color: #FFF;}
+
+/* Headings that must clear link color */
+/* h1, h1 a, h1 a:visited{color: #333;} */
+
+/* Site Title (when it's not an image file) */
+#section-header h1 {
+	color: #FFF;
+    line-height: 90%;
+    font-size: 4.0em;
+    font-weight: 200;
+    letter-spacing: -1px;
+}
+#section-header {
+	color: #333; /* This will usually be a link color anyways */
+	color: rgba(255,255,255,0.8);
+}
+#category-rows-container .module-meta p{font-size: 1.3rem;}
+
+.sf-menu a {
+    padding: 1.2rem 1rem;
+}
+
+/* =============================================================================
+   GENERIC ELEMENT STYLES
+   ========================================================================== */
+dt{font-weight: bold;}
+
+blockquote {
+    background: #fdfdfd;
+    background: rgba(105, 105, 105, 0.05);
+    border-bottom: 4px solid #DDDDDD;
+    border-top: 4px solid #DDDDDD;
+    font-style: italic;
+    line-height: 130%;
+    padding: 20px;
+}
+
+blockquote *:last-child{margin-bottom: 0;}
+
+pre {
+	padding: 15px;
+	background: #FFFFFF;
+    background: rgba(105, 105, 105, 0.05);
+    color: rgba(105, 105, 105, 0.8);
+    border-bottom: 4px solid #DDDDDD;
+    border-top: 4px solid #DDDDDD;
+	white-space: -moz-pre-wrap; /* Mozilla, supported since 1999 */
+	white-space: -pre-wrap; /* Opera 4 - 6 */
+	white-space: -o-pre-wrap; /* Opera 7 */
+	white-space: pre-wrap; /* CSS3 - Text module (Candidate Recommendation) http://www.w3.org/TR/css3-text/#white-space */
+	word-wrap: break-word; /* IE 5.5+ */
+	white-space: -khtml-pre-wrap; /* Safari, not working --  maybe on Konqueror khtml */
+	width: 99%;
+	font-size: 14px;
+}
+
+address {
+    font-style: normal;
+}
+
+sup,
+sub {
+	height: 0;
+	line-height: 1;
+	vertical-align: baseline;
+	_vertical-align: bottom;
+	position: relative;
+	font-size: 10px;
+	
+}
+
+sup {
+	bottom: 1ex;
+}
+
+sub {
+	top: .5ex;
+}
+
+
+/* =============================================================================
+   THEME CUSTOM HEADLINES
+   ========================================================================== */
+.page-caption{}
+.entry-title{}
+.page-title{}

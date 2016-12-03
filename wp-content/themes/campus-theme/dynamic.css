@@ -1,0 +1,29 @@
+/* BEGIN mdnw-dynamic-css */
+/* Global Font Families */
+#section-navigation .sf-menu li a, #section-navigation .sf-menu li a * {  !important }
+#section-navigation .sf-menu li .sub-menu a, #section-navigation .sf-menu li .sub-menu a * {  !important }
+body, p, span {  !important }
+h1, h1 *, h2, h2 *, h3, h3 *, h4, h4 *, h5, h5 *, h6, h6 * {  !important}
+
+/* Optional - Global Font Properties */
+#section-navigation .sf-menu li a, #section-navigation .sf-menu li a * {  !important }
+#section-navigation .sf-menu li .sub-menu a, #section-navigation .sf-menu li .sub-menu a * {  !important }
+body, p, span, #section-navigation .sf-menu li a {  !important }
+h1, h1 *, h2, h2 *, h3, h3 *, h4, h4 *, h5, h5 *, h6, h6 * {  !important}
+
+/* Optional - Beta - Complete Controls By Element */
+h1, h1 *{  !important}
+h2, h2 *{  !important}
+h3, h3 *{  !important}
+h4, h4 *{  !important}
+h5, h5 *{  !important}
+h6, h6 *{  !important}
+.breadcrumbs, .breadcrumbs *{  !important}
+.page-caption, .page-caption *{  !important}
+.action_button, .action_button *{  !important}
+body, p, span{  !important}
+/* END mdnw-dynamic-css */
+/* BEGIN mdnw-dynamic-css */
+body, p, span, .sf-menu li a {  }
+  h1 *,h2 *,h3 *,h4 *,h5 *, .tp-caption *{  }
+/* END mdnw-dynamic-css */

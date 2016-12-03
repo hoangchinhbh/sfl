@@ -1,0 +1,354 @@
+Update Log - Campus
+
+Version 3.1.9
+09/08/16
+General Changes/Fixes Done: 
+- UPDATED: WPBakery Visual Composer 4.12.1
+- UPDATED: Revolution Slider 5.2.6
+- UPDATED: Section-Slider
+  - ADDED: New Style Options
+  - FIXED: Height and Width settings
+- ADDED/FIXED: Responsive support for added footer column widths (ie. one-fifth, one-sixth)
+- UPDATED: Section-Page-Caption
+  - ADDED: Template: Fallback for page_image set if no page_caption is found
+  - ADDED: Load User Styles: Conditionals set for for page_image & page_caption
+    - NOTES: These will set the height of this area based on the aspect ratio of the image used (not the min height option)
+  - DEPRECATED: Custom Page Image Height (now falls back to image aspect ratio)
+    - NOTES: This provide better responsive support for various viewport sizes
+- UPDATED: Sf-menu delay from 0 to 300(ms)
+
+Version 3.1.8
+06/08/16
+General Changes/Fixes Done: 
+- FIXED: Full Width v. Fix Width, Header/Slider option toggle
+- FIXED: Revslider-wrapper height issues (unset)
+- UPDATED: WPBakery Visual Composer 4.12
+- UPDATED: Revolution Slider 5.2.5.3
+- UPDATED: Child Theme - v.2.0
+
+Version 3.1.7
+04/28/16
+General Changes/Fixes Done: 
+- UPDATED: WPBakery Visual Composer 4.11.2.1
+- UPDATED: Revolution Slider 5.2.5
+- ADDED: Additional footer columns/widget areas
+
+Version 3.1.6
+04/14/16
+General Changes/Fixes Done: 
+- UPDATED: WPBakery Visual Composer 4.11.2
+- UPDATED: Revolution Slider 5.2.4.1
+
+Version 3.1.5
+04/05/16
+General Changes/Fixes Done: 
+- UPDATED: WPBakery Visual Composer 4.11.1
+- UPDATED: Revolution Slider 5.2.4
+- UPDATED: Styles for Revolution Slider 5.2.4
+- ADDED: Skin Builder - Visual Composer Tabs
+  - ADDED: VC Tab - BG Color
+  - ADDED: VC Tab - Font Color
+  - ADDED: VC Tab:Hover - BG Color
+  - ADDED: VC Tab:Hover - Font Color
+  - ADDED: VC Tab:Active - BG Color
+  - ADDED: VC Tab:Active - Font Color
+  - ADDED: VC Tab Panel - BG Color
+  - ADDED: VC Tab Panel - Highlight Border Color
+
+Version 3.1.4
+03/02/2016
+General Changes/Fixes Done: 
+- VERSION BUMP
+- UPDATED: WPBakery Visual Composer 4.10
+- UPDATED: Typography 
+  - CHANGE: Mueso Slab (Typekit) to Roboto Slab (Google Font)
+    - MORE INFORMATION: It's been brought to my attention that Typekit has resently removed Mueso Slab from their list of included/free fonts on a single install. Because of this, we are now using the Google Font "Roboto Slab" which we are really happy with. This also removes the need for an extra step (originally included in the documentation).
+  - UPDATED: Documentation to version .7 to coincide with this change. 
+  - UPDATED: OptionTree-Options.txt file updated for new typography usage
+- FIXED: Header Slider Shortcode option now accepts alias="" (old versions will continue to work also) (Thanks @Patrick)
+- FIXED: Tags for single posts & posts on Blog page template (Thanks @DAnte)
+- FEATURE REQUEST(S): 
+  - ADDED: Post Tags Options On/Off (Single)
+  - ADDED: Post Tags Options On/Off (Blog)
+
+Version 3.1.3.5
+01/11/2016
+General Changes/Fixes Done: 
+- UPDATED: WPBakery Visual Composer 4.9.1
+- UPDATED: Revolution Slider 5.1.6
+- UPDATED: Theme styles for new VC Tabs/Tour
+- UPDATED: Removed array_key_exsists check in ot-google-fonts.php line 251
+- UPDATED: Easy Theme & Plugin Upgrades plugin removed from Recommended Plugin list
+- ADDED: Bonus Sidebar: Facebook Feed
+- UPDATED: Resources > Theme Demo Data
+	- UPDATED: Demo-Content.xml
+	- UPDATED: OptionTree-Options.txt
+	- UPDATED: Widgets.wie
+
+Version 3.1.3.4
+12/01/2015
+General Changes/Fixes Done: 
+- UPDATED: Styles for left align image/icons (ie. Home Page)
+- UPDATED: WPBakery Visual Composer 4.8.1
+- UPDATED: Revolution Slider 5.1.4
+- UPDATED: Mobile_Walker function updated for compatibility with strict standards
+- FIXED: Undefined variable db_font_array in ot-google-fonts
+
+Version 3.1.3.3
+10/08/2015
+General Changes/Fixes Done: 
+- FIXED - XSS Vulnerabilities:
+    - UPDATED: WPBakery Visual Composer 4.7.4
+- UPDATED: Revolution Slider 5.0.9
+
+Version 3.1.3.2
+08/08/2015
+General Changes/Fixes Done: 
+- FIXED: Overlapping content-inner/container v. Revolution Sliderfor Chrome (viewports below 767px)
+
+Version 3.1.3.1
+08/01/2015
+General Changes/Fixes Done: 
+- UPDATED: WPBakery Visual Composer 4.6.2
+- FIXED: Styles for inline sliders (mix up with new VC columns)
+- UPDATED: Importing plugins updated to "Recommended" status
+
+Version 3.1.3.0
+06/30/2015
+General Changes/Fixes Done: 
+- UPDATED: WPBakery Visual Composer 4.5.3 - prettyPhoto XSS fix
+- UPDATED: Default std for mdnw-dynamic-css updated for menu li strong scenarios
+- FIXED: template-post-grid v. pre-scripts lightbox function
+- ADDED: Fallback for VC Separators on Mobile (theme.css 461)
+
+Version 3.1.2.9
+06.04.15
+General Changes/Fixes Done:
+- UPDATED: WPBakery Visual Composer 4.5.2
+- ADDED: New Theme Options > Post Options panel to help manage global post options across the site:
+  - Single: Post Options
+    - Show the Title?
+    - Show the Title HR?
+    - Show the Featured Image?
+    - **Show the Post Meta Row?
+      - Show the Post Format Icon?
+      - Show the Author?
+      - Show the Date?
+      - Show the Categories?
+      - Show the Comments Count?
+    - Show the Sub Meta HR?
+    - **Show the Post Footer?
+      - Show the Author Box?
+      - Show the Comments?
+  - Blog: Post Options
+    - Show the Title?
+    - Show the Title HR?
+    - Show the Featured Image?
+    - **Show the Post Meta Row?
+      - Show the Post Format Icon?
+      - Show the Author?
+      - Show the Date?
+      - Show the Categories?
+      - Show the Comments Count?
+    - Show the Sub Meta HR?
+- UPDATED: Single.php now gets format-single.php template
+- ADDED: New format-single.php to handle single post specific options
+- UPDATED: Template-blog.php
+- UPDATED: Format.php updated to handle global blog post specific options
+- UPDATED: Candy-admin-simple.css _notes hook added for multiple ot-theme-options Note sections
+- UDPATED: Cross browser support for header/logo image styling when larger than container (FF)
+- ADDED: New Theme Options > Header Options
+  - Custom Promotional Banner Functionality
+    - Tophat Dropdown Trigger (default)
+    - Custom Link/URL
+        - New Window
+        - Same Window
+    - No Action
+- UPDATED: Header.php tophat dropdown markup
+- UPDATED: Load-user-styles.php updates promotional banner css
+
+Version 3.1.2.8
+05.11.15
+General Changes/Fixes Done:
+- UPDATED: OptionTree-Options.txt (now includes the updated std for the new Typography panel)
+- ADDED: Responsive fallback styling for VC single image
+- UPDATED: Mythology Core 1.1.3: 
+    - WPBakery Visual Composer 4.5.1
+    - Revolution Slider 4.6.93
+    - OptionTree 2.5.5
+
+Version 3.1.2.7
+04.30.2015
+General Changes/Fixes Done:
+- FIXED - XSS Vulnerability:
+    - UPDATED: Mythology Core 1.1.2: 
+        - WPBakery Visual Composer 4.5
+        - Revolution Slider 4.6.9
+        - OptionTree 2.5.4
+        - TGM-Plugin-Activation 2.4.1
+        - Plugin sources updated from http to https
+        - Plugin sources updated to use "latest-stable"
+UPDATED: VC align-left for single-images with titles
+ADDED: Fallback styles for VC Progress Bar
+FIXED: Theme Option descriptions z-index
+FIXED: Typography Font-Replacement z-index
+
+Version 3.1.2.6
+02.11.2015
+General Changes/Fixes Done:
+Plugin Update: WPBakery Visual Composer to 4.4.2
+UPDATE: Functions.php OptionTree loading, removed docs and options ui from view to limit confusion
+UPDATE: OptionTree to 4.5.0
+UPDATE: Typography panel options extendend and updated
+UPDATE: Candy-admin-simple.css styles for new typography panel
+UPDATE: Update_log.txt moved to theme files.
+UPDATE: Load-user-styles.php inclusion of new typography options
+UPDATE: Skeleton-theme-options.php inclusion of new typography options
+ADDED: Simplified typography options for font family replacement
+ADDED: Advanced typography options for font property replacement
+ADDED: Advanced beta custom typography options for font replacement
+
+Version 3.1.2.5
+01.16.2015
+General Changes/Fixes Done:
+- Plugin Update: WPBakery Visual Composer to 4.4.1
+- Plugin Update: WP Revolution Slider to 4.6.5
+- FIXED: Footer font color
+- FIXED: Header navigation & modile menu z-index v. footer
+- FIXED: Responsive menu scrolling
+- UPDATE: Small footer style tweaks
+- UPDATE: Revolution Slider content module style tweaks
+- UPDATE: Responsive menu style tweaks
+- UPDATE: List styles for WooCommerce
+
+Version 3.1.2.4
+10.16.2014
+General Changes/Fixes Done:
+- Ot-google-fonts patched
+- Child theme support fixed
+
+Version 3.1.2.3
+09.5.2014
+General Changes/Fixes Done:
+- Plugin Update: WPBakery Visual Composer - Version 4.2.3 to 4.3.3
+- Plugin Update: WP Revolution Slider - Version 4.3.8 to 4.6.0
+- Recommended plugins are now provided via the plugins promp
+- OptionTree-Options.txt file updated
+- Widgets.wie file updated
+- OptionTree Import options updated. Removed advanced/un-needed options to limit confusion
+- Theme Sliders re-exported to Resourses folder to make importing easier
+- Example Sliders now included in Resources folder
+- Revolution Slider documentation updated in Resources folder
+- Mobile styles updated for latest version of Visual Composer
+- Responsive menu styles updated
+- dl-menu animation lag fix and style update. This speeds up the load time and animation for this on mobile devices
+- Fix included for VC Google Map Module not showing up
+- Fixed font color for tophat and subfooter not overriding body font color option
+- Added font color options for Tophat Dropdown section
+- Post Author Box options updated. Select "No" to remove all Author Boxes globally from posts. Select "Yes" to display the author box at the bottom of blog posts and/or want to control this from individual posts
+
+Version 3.1.2.2
+07.18.2014
+General Changes/Fixes:
+- Responsive Mode option (On/Off) added to Theme Options
+- Line 108 in mythology/ot-google-fonts.php updated from msg to notice. This fixes the error produced in the admin panel
+- Plugin Update: Contact Form 7 now included as recommended
+- All premium plugins are now included as required, force_activate, and force_deactivate
+(Theme now "cleans up" included plugins when deactivated. These can still be used after deactivating this theme, but will need to be re-activated.)
+
+Version 3.1.2.1
+07.04.2014
+General Changes/Fixes:
+- Plugin Update: WPBakery Visual Composer - Version 4.2.1 to 4.2.3
+
+Version 3.1.2.0
+07.01.2014
+General Changes/Fixes:
+- Responsive Layout Update
+
+Version 3.1.1.9
+06.13.2014
+General Changes/Fixes:
+- OptionTree theme version now baked in
+- New styles and updates to Theme Options panels
+- Footer color option updated
+
+Version 3.1.1.8
+05.06.2014
+General Changes/Fixes:
+- Plugin Update: WPBakery Visual Composer - Version 4.1.1 to 4.2.1
+- Plugin Update: WP Revolution Slider - Version 4.3.6 to 4.3.8
+
+Version 3.1.1.7
+05.06.2014
+General Changes/Fixes:
+- OT-Google Fonts Updated
+- Font styles now available
+- Mythology Core now included
+
+Version 3.1.1.6
+04.18.2014
+General Changes/Fixes:
+- WooCommerce now supported
+- Plugin Update: WPBakery Visual Composer - Version 4.0.4 to 4.1.1
+- Plugin Update: WP Revolution Slider - Version 4.3.3 to 4.3.6
+- Google Fonts Connection Updated
+- Visual Composer .wpb_wrapper margins updated
+- Full Start Guide documentation updated
+
+Version 3.1.1.5
+03.28.2014
+General Changes/Fixes:
+- Plugin Update: WPBakery Visual Composer - Version 3.6.14.1 to 4.0.4
+- Plugin Update: WP Revolution Slider - Version 4.1.4 to 4.3.3
+- Update functions.php with new OptionTree version patch (setting theme mode to false)
+(removed VC update)
+- Fix Post Slider option
+- Post Option "Slider Shortcode for Page Header" fixed, skeleton-meta-boxes.php line 843.
+
+Version 3.1.1.4
+01.08.2014
+General Changes/Fixes:
+- New Visual Composer "Carousel" module supported and styled
+- Update Header Alignment option (this no longer manages the menu alignment)
+- Feature Added: Number of footer columns option
+- Widgets.wie file updated
+
+Version 3.1.1.3
+01.07.2014
+General Changes/Fixes:
+- Plugin Update: WPBakery Visual Composer - Version 3.6.14.1 to Version: 3.7.3
+- Plugin Update: WP Revolution Slider - Version: 3.0.95 to Version: 4.1.4
+- Bug fix: ot-google-fonts.php file (https://github.com/doitmax/option-tree-google-fonts). The function/add action (line 106) for notice_no_connection_possible v. msg_no_connection_possible. Reference: https://github.com/doitmax/option-tree-google-fonts/issues/13 by Momekh.
+- Pulled mobile support for parent item self generation within child list.
+- Updated speed parameters for supersubs dropdown menu (fixes menu flickering).
+- Demo Content XML updated for new su_ default prefix.
+- Styling Updates: 
+  - OptionTree/ThemeOptions Styling fix for WP 3.8. Fixes panel from getting kicked down, increases width of panel, and other small tweeks. Also added styling to remove the depreciated XML option to decrease confusion.
+  - WP3.8 Current Menu Item Color
+  - Added dynamic menu list item strong (Theme Specific for font family read)
+        - Option is to manually add this font style:
+        .sf-menu > li > a {
+          font-family: "museo-slab";
+        }
+  - Added Flagdropdown BG color and image background options
+  - Linked Secondary Color option to Tabs, Touring, and Highlight Row.
+
+Version 3.1.1.2
+12.09.2013
+General Changes/Fixes:
+- OptionTree is now baked in.
+- Added new code to functions.php to initiate OptionTree.
+- OT Google Fonts is updated to the latest version. 
+- Added a fallback for WALKER menu - basically, if a menu has not been set yet, it just lists the Pages rather than throwing errors for undefined variables.
+- Removed OptionTree ZIP from the tgm-plugin-activation folder.
+
+Version 3.1.0.3
+10.22.2013
+General Changes/Fixes: Full Start Guide and How to Update Plugins Updated. Demo widgets included. Flag styles updated for IE and Safari. Premium Plugins Updated:
+ - Visual Composer Version: 3.6.14.1 
+ - Revolution Slider Version: 3.0.95
+
+Version 3.1.0.2
+10.11.2013
+General Changes/Fixes: First Release.

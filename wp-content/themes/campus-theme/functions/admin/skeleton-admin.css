@@ -1,0 +1,450 @@
+/*
+	OptionTree ThemeBuilder UI Customizations
+	by ThemeIsland
+	Version: 1.0.0
+*/
+
+
+/* MAIN LAYOUT OVERRIDES */
+
+.appearance_page_ot-theme-options #wpcontent, 
+.appearance_page_ot-theme-options #footer {
+    margin-left: 0;
+    /* background: #ddd url('images/admin-background.png') top center fixed repeat; */
+    background: #089eeb; /* Old browsers */
+    /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+    background: fixed url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPHJhZGlhbEdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgY3g9IjUwJSIgY3k9IjUwJSIgcj0iNzUlIj4KICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiMwODllZWIiIHN0b3Atb3BhY2l0eT0iMSIvPgogICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjMTA3YWNiIiBzdG9wLW9wYWNpdHk9IjEiLz4KICA8L3JhZGlhbEdyYWRpZW50PgogIDxyZWN0IHg9Ii01MCIgeT0iLTUwIiB3aWR0aD0iMTAxIiBoZWlnaHQ9IjEwMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+    background: fixed -moz-radial-gradient(center, ellipse cover, #089eeb 0%, #107acb 100%); /* FF3.6+ */
+    background: fixed -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#089eeb), color-stop(100%,#107acb)); /* Chrome,Safari4+ */
+    background: fixed -webkit-radial-gradient(center, ellipse cover, #089eeb 0%,#107acb 100%); /* Chrome10+,Safari5.1+ */
+    background: fixed -o-radial-gradient(center, ellipse cover, #089eeb 0%,#107acb 100%); /* Opera 12+ */
+    background: fixed -ms-radial-gradient(center, ellipse cover, #089eeb 0%,#107acb 100%); /* IE10+ */
+    background: fixed radial-gradient(ellipse at center, #089eeb 0%,#107acb 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#089eeb', endColorstr='#107acb',GradientType=1 ); /* IE6-8 fallback on horizontal gradient */        
+    padding: 20px 0;
+}
+
+.appearance_page_ot-theme-options #wpbody-content {float: none;}
+
+#wpbody-content #page-ot_theme_options {
+  margin: 0 0 0 10%;
+  width: 81%;
+}
+
+.appearance_page_ot-theme-options #poststuff {min-width: 20% !important;}
+
+.appearance_page_ot-theme-options #option-tree-settings-api .inside {min-height: 650px;}
+
+
+#wpbody-content {
+  padding-bottom: 10px;
+}
+
+.updated.vc-license-activation-notice {
+  display: none !important;
+}
+
+.updated.google-fonts-connection {
+  display: none !important;
+}
+
+/* #wpfooter {
+    position: fixed !important;
+} */
+
+/* Tweaks for the typography to remove extra options */
+.type-typography input{visibility: hidden;}
+.type-typography .format-setting-inner{width: 90% !important;}
+#setting_headline_font textarea{font-size: 26px !important;}
+/*.type-typography .select-wrapper{visibility: hidden; height: 1px; width: 1px;}*/
+.type-typography .select-wrapper{visibility: visible; height: auto; width: auto;}
+.type-typography .option-tree-ui-colorpicker-input-wrap{display: none;}
+
+/* .type-typography .select-wrapper:nth-child(7),
+.type-typography .select-wrapper:nth-child(5), */
+.type-typography .select-wrapper:nth-child(3){visibility: visible; height: auto; width: auto;}
+
+
+/* Custom vertical padding for all optionboxes */
+.format-settings{padding: 20px 0;}
+
+/* Custom padding for the page/post sidebar version of the meta-boxes */
+#side-sortables .format-settings{padding: 10px 0;}
+
+#page-ot_theme_options a[href$="#section_quick-start"]{color: #57ac2d !important;}
+
+#page-ot_theme_options a[href$="#section_overview"],
+#page-ot_theme_options a[href$="#section_documentation"]{color: #57ac2d !important;}
+
+
+/* Set a custom BR height and HR style */
+.format-settings br{
+   display: block;
+   margin: 3px 0;
+}
+.format-settings hr{margin: 30px 0; border-top: 1px dashed #DDD; border-bottom: 0px; border-left: 0px; border-right: 0px;}
+
+/* Set the width of all input/form elements to auto */
+/*#option-tree-settings-api .format-setting .format-setting-inner {
+    width: auto;
+}*/
+
+/* Resize the width of just the custom CSS field */
+.appearance_page_ot-theme-options .type-textarea .format-setting-inner {
+    width: 90% !important;
+}
+
+/* Set the information-icon next to head OT heading */
+.format-setting-label {
+    background: url("images/information-icon.png") no-repeat scroll -5px -2px transparent;
+    border-bottom: 1px dashed #DDDDDD;
+    margin: 0 0 10px;
+    padding: 2px 0 1px 21px;
+    width: 98%;
+}
+
+/* Remove the dashed line from the Theme Options panel headings */
+#option-tree-settings-api .format-setting-label {
+    border-bottom: 0px dashed #DDDDDD;
+	margin: 0 0 2px;
+}
+
+/* Style the main headlines (remove the bg and padding) */
+#option-tree-settings-api #setting_general_notes .format-setting-label, 
+#option-tree-settings-api #setting_typography_notes .format-setting-label, 
+#option-tree-settings-api #setting_color_notes .format-setting-label, 
+#option-tree-settings-api #setting_skin_notes .format-setting-label, 
+#option-tree-settings-api #setting_fontcolor_notes .format-setting-label, 
+#option-tree-settings-api #setting_image_notes .format-setting-label, 
+#option-tree-settings-api #setting_footer_notes .format-setting-label, 
+#option-tree-settings-api #setting_themeoverview_notes .format-setting-label, 
+#option-tree-settings-api #setting_social_notes .format-setting-label, 
+#option-tree-settings-api #setting_tophat_notes .format-setting-label, 
+#option-tree-settings-api #setting_frontpage_notes .format-setting-label, 
+#option-tree-settings-api #setting_helpme .format-setting-label, 
+#option-tree-settings-api #setting_plugins .format-setting-label{
+	background: none;
+	padding-left: 0px;
+}
+
+/* Style the main headlines */
+#option-tree-settings-api #setting_general_notes h3.label, 
+#option-tree-settings-api #setting_typography_notes h3.label, 
+#option-tree-settings-api #setting_color_notes h3.label, 
+#option-tree-settings-api #setting_fontcolor_notes h3.label, 
+#option-tree-settings-api #setting_social_notes h3.label, 
+#option-tree-settings-api #setting_footer_notes h3.label, 
+#option-tree-settings-api #setting_themeoverview_notes h3.label, 
+#option-tree-settings-api #setting_tophat_notes h3.label, 
+#option-tree-settings-api #setting_skin_notes h3.label, 
+#option-tree-settings-api #setting_image_notes h3.label, 
+#option-tree-settings-api #setting_frontpage_notes h3.label, 
+#option-tree-settings-api #setting_helpme h3.label, 
+#option-tree-settings-api #setting_plugins h3.label{
+	font-family: Segoe, "Segoe UI", Calibri, Candara, Optima, Arial, sans-serif !important;
+	font-size: 29px !important;
+	font-weight: 100 !important;
+	color: #0c77e1 !important;
+}
+
+/* The general description for all theme options (includes the page editor version) */
+.format-setting .description {
+    color: #777;
+    float: right;
+    font-size: 15px;
+    padding: 3px 0 11px;
+    width: 100%;
+}
+
+/* (blue box) The accordion description on the Theme Options page */
+#option-tree-settings-api .format-setting .description {
+    background: none repeat scroll 0 0 #ebf7ff;
+    border: 1px solid #cbe7f9;
+    border-radius: 3px;
+    color: #556f80;
+    float: left;
+    font-size: 15px;
+    margin: 0 0 14px;
+    padding: 10px 15px;
+    width: 90%;
+}
+
+/* The description for the main headlines */
+#option-tree-settings-api #setting_general_notes .description, 
+#option-tree-settings-api #setting_typography_notes .description, 
+#option-tree-settings-api #setting_color_notes .description, 
+#option-tree-settings-api #setting_fontcolor_notes .description, 
+#option-tree-settings-api #setting_social_notes .description, 
+#option-tree-settings-api #setting_footer_notes .description, 
+#option-tree-settings-api #setting_themeoverview_notes .description, 
+#option-tree-settings-api #setting_tophat_notes .description, 
+#option-tree-settings-api #setting_skin_notes .description, 
+#option-tree-settings-api #setting_image_notes .description, 
+#option-tree-settings-api #setting_frontpage_notes .description, 
+#option-tree-settings-api #setting_helpme .description, 
+#option-tree-settings-api #setting_plugins .description{
+    color: #777;
+    float: left;
+    padding: 3px 0 0px;
+    width: 100%;
+    background: white;
+    border: 0px solid white;
+    border-radius: 0px;
+}
+
+#side-sortables .format-setting-label {
+    background: url("images/information-icon.png") no-repeat scroll -5px -1px transparent;
+    width: 90%;
+}
+
+#side-sortables .format-setting .description{
+	padding: 3px 0 14px;	
+}
+
+#side-sortables .format-setting .format-setting-inner {
+    width: 99%;
+}
+
+.format-setting .description a img{margin: 20px auto; text-align: center;}
+.format-setting .description a img:hover{box-shadow: 0 0 40px #00c0ff;}
+
+/* - Remove XML Import Option - */
+#setting_import_xml_text {
+  display: none;
+}
+
+
+
+/* Original OT Restyle */
+
+#page-ot_theme_options {
+    width: 75%;
+    margin: 0 auto;
+    padding-right: 10px;
+}
+
+#section_skin-builder .format-settings, #section_social .format-settings {
+    width: 45%;
+    display: inline-block;
+    margin-right: 5%;
+    float: left;
+}
+
+#section_skin-builder .format-settings:nth-child(2n+3) {
+    clear: right;
+}
+
+#section_skin-builder .format-settings:nth-child(2n+4) {
+    float: none;
+    clear: left;
+}
+
+#option-tree-settings-api #setting_color_notes, 
+#option-tree-settings-api #setting_skin_notes,
+#option-tree-settings-api #setting_fontcolor_notes{
+    width: 100%;
+    display: block;
+    margin-bottom: -40px;
+    float: none;
+    clear: both;
+}
+
+/* FONT FAMILY IS HERE! */
+#page-ot_theme_options,
+h1, h3, h4, h3.label, .format-setting .description {
+    font-family: "Calibri", Arial, Verdana !important;
+}
+
+#post-body-content{
+	   	font-size: 14px; 
+	   	line-height: 1.5em;	   		   
+	   }
+   
+.appearance_page_ot-theme-options #wpcontent, 
+.appearance_page_ot-theme-options #footer {
+margin-left: 146px;
+background: #ddd url('images/admin-background.png') top center fixed repeat; 		
+padding: 20px 0;
+}
+
+#option-tree-settings-api .postbox {
+    margin: 0 40px;
+}
+
+#page-ot_theme_options .ui-tabs-nav li a{text-align: right; padding-right: 10px;}
+
+#page-ot_theme_options .ui-tabs-nav li {
+    border-top: 1px solid white;
+    border-bottom: 1px solid #ddd;
+    margin: 0 1px 0 4px;
+}
+
+#page-ot_theme_options a{color: #1774b6;}
+#page-ot_theme_options .ui-state-active a{color: #333;}
+
+a.option-tree-ui-button{color: white !important;}
+ 
+#page-ot_theme_options .ui-tabs-nav li:first-child {
+    border-top: 0px !important;
+}
+
+.heading h3{
+	font-size: 1.5em;
+}
+
+#page-ot_theme_options .ui-tabs-nav li.ui-state-active {
+    margin-left: 0;
+    margin-top: -1px;
+	border-top: 1px solid #ddd !important;
+}
+
+#page-ot_theme_options .ui-tabs-nav li:hover {
+    background: white;
+}
+
+.option-tree-sortable .option-tree-ui-button {
+    padding: 0 11px;
+}
+
+.theme-store-wrapper{clear: both; margin: 40px 0;}
+.theme-store{float: left; display: block; margin-right: 10px;}
+
+.theme-store img{width: 350px; padding: 6px; border: 1px solid #bbb; border-radius: 2px; background: #ddd;
+	  	   -moz-transition: all .2s ease-in-out;
+		-webkit-transition: all .2s ease-in-out;
+		     -o-transition: all .2s ease-in-out;
+		        transition: all .2s ease-in-out;
+}
+.theme-store img:hover{background: #111;}
+
+.appearance_page_ot-theme-options #footer { padding-left: 30px; padding-right: 30px; margin-right: 0px; background: white none;}
+
+.type-textblock.titled{font-size: 16px; line-height: 1.5em;}
+
+.appearance_page_ot-theme-options .postbox input, 
+.appearance_page_ot-theme-options .postbox textarea {
+    background: -moz-linear-gradient(center top, #FFFFFF, #EEEEEE 1px, #FFFFFF 25px) repeat scroll 0 0 transparent;
+    background: -webkit-gradient(linear, center top, center bottom, from(#EEE), to(#FFF)) repeat scroll 0 0 transparent;
+    border: 1px solid #E5E5E5;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    font: 13px/160% Arial,Tahoma,sans-serif;
+    outline: 0 none;
+    padding: 9px !important;
+}
+
+.appearance_page_ot-theme-options .postbox input:focus, 
+.appearance_page_ot-theme-options .postbox textarea:focus {
+    border: 1px solid #64bff4 !important;
+    box-shadow: 0 0 4px #b9e5ff;
+    background: -moz-linear-gradient(center top, #FFFFFF, #f0f8fc 1px, #FFFFFF 25px) repeat scroll 0 0 transparent;
+    background: -webkit-gradient(linear, center top, center bottom, from(#f0f8fc), to(#FFF)) repeat scroll 0 0 transparent;
+}
+ 
+
+.appearance_page_ot-theme-options #wpfooter {
+    border-color: transparent;
+    color: #777777;
+}
+
+.option-tree-ui-button {
+    height: 28px;
+    line-height: 27px;
+    margin: 5px;
+    padding: 3px 14px;
+}
+
+.option-tree-ui-remove-media{margin-top: 3px; padding: 2px 14px;}
+
+
+.appearance_page_ot-theme-options .wrap h2, .subtitle {
+    color: #FFFFFF;
+    font-family: Segoe, "Segoe UI", Calibri, Candara, Optima, Arial, sans-serif !important;
+    font-weight: 100;
+    text-shadow: 1px 1px 0 #000000;
+}
+
+/* .appearance_page_ot-theme-options #update-nag, .appearance_page_ot-theme-options .update-nag{display: none;} */
+
+.appearance_page_ot-theme-options #akismet-warning, 
+.appearance_page_ot-theme-options .updated{display: none;}
+
+/* .appearance_page_ot-theme-options .select-wrapper {height: 37px !important; background-position: right 2px !important;}
+.appearance_page_ot-theme-options select.option-tree-ui-select {margin-top: 10px !important; height: 39px !important; min-width: 232px !important;}
+.appearance_page_ot-theme-options .select-wrapper span {height: 37px !important; line-height: 37px !important;} */
+
+
+[class*="general foundicon-"]:before {
+    font-family: "GeneralFoundicons";
+}
+[class*="foundicon-"]:before {
+    font-family: "AccessibilityFoundicons";
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+}
+[class*="foundicon-"]:before {
+    font-family: "SocialFoundicons";
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+}
+.foundicon-heart:before {
+    content: "";
+}
+[class*="foundicon-"]:before {
+    font-family: "GeneralEnclosedFoundicons";
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+}
+.foundicon-heart:before {
+    content: "";
+}
+[class*="foundicon-"]:before {
+    font-family: "GeneralFoundicons";
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+}
+[class*="general foundicon-"]:before {
+    font-family: "GeneralFoundicons";
+}
+ul.large-icons li i {
+    color: #231F20;
+    display: block;
+    font-size: 100px;
+    line-height: 1.4;
+    text-align: center;
+    transition: color 0.5s ease 0s;
+}
+[class*="foundicon-"] {
+    background-image: none;
+    background-position: 0 0;
+    background-repeat: repeat;
+    height: auto;
+    vertical-align: baseline;
+    width: auto;
+}
+h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, cite, code, img, small, strike, sub, sup, tt, dd, dl, dt, li, ol, ul, fieldset, form, label, legend, button, table, caption, tbody, tfoot, thead, tr, th, td {
+    font-family: inherit;
+    font-weight: normal;
+}
+ul {
+    list-style: none outside none;
+}
+body {
+    text-rendering: optimizelegibility;
+}
+
+.appearance_page_ot-theme-options #option-tree-settings-api .inside {
+    min-height: 650px;
+}
+
+
+.option-tree-ui-colorpicker-input-wrap {
+    margin-right: 53px;
+    position: relative;
+    min-width: 120px;
+}
+
+    
