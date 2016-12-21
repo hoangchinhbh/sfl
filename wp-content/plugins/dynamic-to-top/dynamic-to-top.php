@@ -1,13 +1,13 @@
 <?php
 /*
 Plugin Name: Dynamic To Top
-Version: 3.4.2
+Version: 3.5
 Plugin URI: http://www.mattvarone.com/featured-content/dynamic-to-top/
 Description: Adds an automatic and dynamic "To Top" button to scroll long pages back to the top.
-Author: Matt Varone
+Author: Matt Varone, Tim Berneman
 Author URI: http://www.mattvarone.com
 
-Copyright 2011-2012 ( email: contact@mattvarone.com )
+Copyright 2011-2016 ( email: contact@mattvarone.com )
 
 This program is free software; you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
@@ -30,7 +30,7 @@ Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 |--------------------------------------------------------------------------
 */
 
-define( 'MV_DYNAMIC_TO_TOP_VERSION', '3.4.2' );
+define( 'MV_DYNAMIC_TO_TOP_VERSION', '3.5' );
 
 /*
 |--------------------------------------------------------------------------

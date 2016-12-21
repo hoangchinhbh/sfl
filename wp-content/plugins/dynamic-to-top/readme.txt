@@ -1,10 +1,9 @@
 === Dynamic "To Top" Plugin ===
-Contributors: sksmatt
-Donate link: http://www.mattvarone.com/donate/
+Contributors: sksmatt, tberneman
 Tags: Scroll, To top, Button, jQuery, Dynamic, UI, Automatic, Enhance, UX
 Requires at least: 3.4
-Tested up to: 3.4.2
-Stable tag: 3.4.2
+Tested up to: 4.7
+Stable tag: trunk
 
 Adds an automatic and dynamic "To Top" button to easily scroll long pages back to the top.
 
@@ -41,6 +40,13 @@ Would you like to help translate the plugin into more languages? [Contact Matt](
 4. Dynamic To Top settings page on text mode.
 
 == Change log ==
+
+= 3.5 =
+Verified compatibility with WordPress 4.7
+Verified compatibility with https:\\
+
+= 3.4.3 =
+Fixed uninstall issue.
 
 = 3.4.2 =
 * CSS moved to head. Improves performance and compatibility with cache and HTML minifier plugins.
