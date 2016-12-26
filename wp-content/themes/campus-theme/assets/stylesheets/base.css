@@ -144,12 +144,12 @@ table td {
    ========================================================================== */
 ol { list-style: decimal; }
 ul { list-style: none; }
-ul.disc { list-style: disc; }
+ul.disc { list-style: none; }
 ul.square { list-style: square; }
 ul.circle { list-style: circle; }
 
 ul li { list-style: none; margin-left: 0px; }
-ul.disc li { list-style: disc; margin-left: 30px; }
+ul.disc li { list-style: none; margin-left: 30px; }
 ul.square li { list-style: square; margin-left: 30px; }
 ul.circle li { list-style: circle; margin-left: 30px; }
 

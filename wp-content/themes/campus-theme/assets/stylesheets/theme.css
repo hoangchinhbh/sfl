@@ -1,4 +1,4 @@
-
+﻿
 
 /* ======================================================= */
 /* CUSTOM THEME CSS */
@@ -1329,7 +1329,7 @@ hr.page-title-hr {
 #section-content ul li, #section-footer ul li, #section-sub-footer ul li, #section-tophat ul li {
   list-style-image: none;
   list-style-position: inside;
-  list-style-type: disc;
+  list-style-type: none;
   margin-left: 0;
 }
 ol {

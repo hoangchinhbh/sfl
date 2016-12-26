@@ -289,7 +289,7 @@ img.site-title{margin-bottom: 0px;}
     top: 20px;
 }
 /*  -  .widget li {
-    list-style: disc inside none !important;
+    list-style: none inside none !important;
     padding: 5px 10px 0 5px;
 }
 -  */
@@ -627,7 +627,7 @@ li.pingback p{padding: 0;}
 #section-content .container:last-child{padding-bottom: 15px;}
 #section-footer{
 	border-top: 2px solid #111;
-	padding: 35px 0 35px;
+	padding: 5px 0px 5px;
 } 
 #section-footer h5{
 	position: relative;
@@ -805,7 +805,7 @@ p.et_lb_testimonial-meta a {
 }
 
 .et_lb_module_content_inner ul {
-    list-style: disc inside none !important;
+    list-style: none inside none !important;
     padding: 10px 0 0 10px;
 }
 

@@ -14,8 +14,8 @@
 		endif;
 	?> 
 
-<div class="super-container full-width" id="section-footer">
 
+<div class="super-container full-width" id="section-footer">
 	<!-- 960 Container -->
 	<div class="container">
 		<!-- footer -->
@@ -55,7 +55,6 @@
 
 <!-- Super Container - SubFooter Space -->
 <div class="super-container full-width" id="section-sub-footer">
-
 <!-- 960 Container -->
 <div class="container">
 
