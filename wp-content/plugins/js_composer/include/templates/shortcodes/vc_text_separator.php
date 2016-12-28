@@ -76,7 +76,7 @@ if ( $icon ) {
 }
 if ( '' !== $title && 'separator_no_text' !== $layout ) {
 	$css_class .= ' vc_separator-has-text';
-	$content .= '<h4>' . $title . '</h4>';
+	$content .= '<h2widget color="#00254E">&nbsp;' . $title . '&nbsp;</h2widget>';
 }
 
 
