@@ -1222,3 +1222,62 @@ p img{margin-bottom: 0;}
 	}
 			
 }
+
+.overlayPopup {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  z-index:9999;
+  opacity: 0;
+}
+.overlayPopup:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popupPopup {
+  margin: 100px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  width: 30%;
+  position: relative;
+  transition: all 5s ease-in-out;
+}
+
+.popupPopup h2 {
+  margin-top: 0;
+  color: #333;
+  font-family: Tahoma, Arial, sans-serif;
+}
+.popupPopup .closePopup {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+.popupPopup .closePopup:hover {
+  color: #06D85F;
+}
+.popupPopup .contentPopup {
+  max-height: 30%;
+  overflow: auto;
+}
+
+@media screen and (max-width: 700px){
+  .boxPopup{
+    width: 70%;
+  }
+  .popupPopup{
+    width: 70%;
+  }
+}
