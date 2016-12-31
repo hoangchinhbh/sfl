@@ -459,7 +459,6 @@ class Wpfixedverticalfeedbackbutton_Public {
 					$anchor_output = '<div class="fvfeedbackbutton '.$class.' " id="fvfeedbackbutton' . $loop_post_id . '"><a class="'.$anchorClass.'"  href="' . $link . '" data-count = "'.$loop_post_id.'" data-show-form = "'.$cbwpfvb_show_form.'" title="' . $title . '" target="' . $open . '"><span>' . $imageOrText . '</span></a></div>
 					<div id="popupPopup" class="overlayPopup">
 					<div class="popupPopup">
-						<h2>Here i am</h2>
 						<a class="closePopup" href="#">&times;</a>
 						<div class="contentPopup">'
 							.$content=apply_filters(the_content, get_post_field(post_content, $loop_post_id)).'
