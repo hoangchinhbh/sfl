@@ -1241,10 +1241,9 @@ p img{margin-bottom: 0;}
 }
 
 .popupPopup {
-  margin: auto;
+  margin: 0 auto;
   padding: 0px;
-  margin-top: 35px
-  background: #fff;
+  margin-top: 150px;
   border-radius: 5px;
   width: 70%;
   position: relative;
@@ -1259,12 +1258,12 @@ p img{margin-bottom: 0;}
 .popupPopup .closePopup {
   position: absolute;
   top: 20px;
-  right: 30px;
+  right: 85px;
   transition: all 200ms;
   font-size: 30px;
   font-weight: bold;
   text-decoration: none;
-  color: #333;
+  color: #fff;
 }
 .popupPopup .closePopup:hover {
   color: #06D85F;
