@@ -460,11 +460,11 @@ var Grid = (function($) {
 					href : $itemEl.attr( 'href' ),
 					largesrc : $itemEl.data( 'largesrc' ),
 					title : $itemEl.data( 'title' ),
-					description : $itemEl.data( 'description' )
+					description : ($itemEl.data( 'description' ))
 				};
 
 			this.$title.html( eldata.title );
-			this.$description.html( eldata.description );
+			this.$description.html(unescape( eldata.description ));
 			this.$href.attr( 'href', eldata.href );
 
 			var self = this;

@@ -14,6 +14,8 @@ define('GPORTFOLIO_URL', plugin_dir_url(__FILE__));
 define('GPORTFOLIO_DIR', plugin_dir_path(__FILE__));
 define('GPORTFOLIO_BASENAME', plugin_basename(__FILE__));
 
+
+
 function gportfolio_function()
 {
 ?>
@@ -214,6 +216,7 @@ function portfolio_shortcode_query($opt, $content)
 	  $thumb_big_url = wp_get_attachment_image_src($thumb_id, $image_size, true);
 		$thumb_url = wp_get_attachment_image_src($thumb_id);
 		$string = strip_tags(get_the_content());
+		//$string = get_the_content();
 	
   if (strlen($string) > 20)
 		{
@@ -231,11 +234,12 @@ function portfolio_shortcode_query($opt, $content)
 	$nameTeacher = get_post_meta( $post->ID, 'TeacherName', true );
 	$ageTeacher = get_post_meta( $post->ID, 'TeacherAge', true );
 	$nationTeacher = get_post_meta( $post->ID, 'TeacherNation', true );
-		
-  
+	$contentHTML = htmlentities(get_the_content());
+	$encodeHTML = htmlentities($contentHTML);
+	$linkTeacher = get_permalink();
   	$out.= '
                         <li data-tags="' . $taxi_list . '" class="' . $col . ' column ' . $taxi_list . ' all ">
-                           <a class="work-details" href="' .$g_link. '" data-largesrc="' . $image[0] . '" data-title="' . get_the_title() . '" data-description="' . get_the_content() . '">
+                           <a class="work-details" href="' .$linkTeacher. '" data-largesrc="' . $image[0] . '" data-title="' . get_the_title() . '" data-description="' . $encodeHTML . '">
                               <div class="portf-load work-image-wrap" rel="nofollow">
                                  <div class="work-image-wrap-inner">
                                     ' . $thumb_id .'

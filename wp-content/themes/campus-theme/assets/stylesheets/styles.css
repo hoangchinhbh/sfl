@@ -1243,7 +1243,7 @@ p img{margin-bottom: 0;}
 .popupPopup {
   margin: 0 auto;
   padding: 0px;
-  margin-top: 150px;
+  margin-top: 10px;
   border-radius: 5px;
   width: 70%;
   position: relative;
@@ -1257,7 +1257,7 @@ p img{margin-bottom: 0;}
 }
 .popupPopup .closePopup {
   position: absolute;
-  top: 20px;
+  top: 30px;
   right: 85px;
   transition: all 200ms;
   font-size: 30px;
