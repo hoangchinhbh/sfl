@@ -34,7 +34,7 @@ add_action('wp_footer', 'gportfolio_function', 100);
 function theme_setup()
 {
 	add_editor_style();
-	add_image_size('port-thumb', 325, 233, true);
+	add_image_size('port-thumb', 500, 500, true);
 }
 
 add_action('after_setup_theme', 'theme_setup');
@@ -56,7 +56,7 @@ add_action('wp_head', 'head_code', 100);
 function gportfolio_style()
 {
 	
-	wp_enqueue_style('gportfolio-stlye', GPORTFOLIO_URL . 'style.css');
+	wp_enqueue_style('gportfolio-stlye', GPORTFOLIO_URL . 'css/stylegrid.css');
     wp_enqueue_style('gportfolio-stlye1', GPORTFOLIO_URL . 'css/bootstrap.min.css');
     wp_enqueue_style('gportfolio-stlye2', GPORTFOLIO_URL . 'css/bootstrap-theme.min.css');
 	/*wp_register_script('jquery', GPORTFOLIO_URL . "/js/jquery.js");
@@ -133,7 +133,7 @@ function portfolio_shortcode_query($opt, $content)
 		'posts_per_page' => '-1',
 		'post_type' => 'gportfolio'
 	);
-	if (@$opt['col'] == 3 || @$opt['col'] == '')
+	if (@$opt['col'] == 3)
 	{
 		$col = "col-md-4";
 		$image_size = "port-thumb";
@@ -144,13 +144,18 @@ function portfolio_shortcode_query($opt, $content)
 		$col = "col-md-3";
 		$image_size = "four-col";
 	}
+	
+	if (@$opt['col'] == 5)
+	{
+		$col = "col-md-5";
+		$image_size = "five-col";
+	}
 
 	if (@$opt['col'] == 2)
 	{
 		$col = "col-md-6";
 		$image_size = "two-col";
 	}
-
 	global $post;
 	$posts = new WP_Query($atts);
 	$out = '<div class="work-outer bg-div outer-div box-container" id="portfolio">
@@ -164,20 +169,20 @@ function portfolio_shortcode_query($opt, $content)
                         ';
 	
   
-  $out.= '<li><a href="#" data-filter=".all" class="selected">All</a></li>
+  $out.= '<li><a href="#" data-filter=".all" class="selected">Tập Thể Giáo Viên Ánh Dương</a></li>
                         ';
 	$args = array(
 		'name' => 'gportfolio'
 	);
 
   
-  $taxonomies = get_terms('gportfolio-category');
+  //$taxonomies = get_terms('gportfolio-category');
 	
   
-  foreach($taxonomies as $taxonomy)
-		{
-			$out.= '<li><a href="#" class="filter" data-filter=".' . strtolower($taxonomy->name) . '">' . $taxonomy->name . '</a></li>';
-		}
+  //foreach($taxonomies as $taxonomy)
+		//{
+			//$out.= '<li><a href="#" class="filter" data-filter=".' . strtolower($taxonomy->name) . '">' . $taxonomy->name . '</a></li>';
+		//}
 
 	$out.= '</ul></nav></div>
             </div>

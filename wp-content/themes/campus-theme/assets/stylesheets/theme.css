@@ -21,7 +21,9 @@ img#wpstats{display: none;}
 #section-tophat {z-index: 1;}
 #section-tophat ul.social {margin: -2px 5px 0 0;}
 #section-tophat .search{float: left; margin-left: 0px;}
-
+#section-tophat .search .dptheme{
+	
+}
 #section-tophat .search input.field {
 	background: transparent url("../images/theme/search.png") no-repeat 3px 3px;
 	border: 0px;

@@ -421,8 +421,8 @@ var Grid = (function($) {
 		create : function() {
 			// create Preview structure:
 			this.$title = $( '<h3></h3>' );
+			this.naviLine = $('<hr></hr>');
 			this.$description = $( '<p></p>' );
-			this.$href = $( '<a target="blank" href="#">Visit website</a>').append( this.$href );
 			this.$details = $( '<div class="og-details"></div>' ).append( this.$title, this.$description, this.$href );
 			this.$loading = $( '<div class="og-loading"></div>' );
 			this.$fullimage = $( '<div class="og-fullimg"></div>' ).append( this.$loading );
@@ -457,7 +457,7 @@ var Grid = (function($) {
 			// update preview´s content
 			var $itemEl = this.$item.children( 'a' ),
 				eldata = {
-					href : $itemEl.attr( 'href' ),
+					//href : $itemEl.attr( 'href' ),
 					largesrc : $itemEl.data( 'largesrc' ),
 					title : $itemEl.data( 'title' ),
 					description : ($itemEl.data( 'description' ))
@@ -465,7 +465,7 @@ var Grid = (function($) {
 
 			this.$title.html( eldata.title );
 			this.$description.html(unescape( eldata.description ));
-			this.$href.attr( 'href', eldata.href );
+			//this.$href.attr( 'href', eldata.href );
 
 			var self = this;
 			
@@ -557,8 +557,8 @@ var Grid = (function($) {
 				};
 
 			this.calcHeight();
-			this.$previewEl.css( 'height', "400px" );
-			this.$item.css( 'height', "650px" ).on( transEndEventName, onEndFn );
+			this.$previewEl.css( 'height', "220px" );
+			this.$item.css( 'height', "420px" ).on( transEndEventName, onEndFn );
 
 			if( !support ) {
 				onEndFn.call();
