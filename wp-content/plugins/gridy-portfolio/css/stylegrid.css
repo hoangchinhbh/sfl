@@ -568,16 +568,11 @@ margin-left:0;
     bottom: 0;
 }
 
-.work-outer .work-image-wrap .work-image-wrap-inner .detail-teacher .info-teacher .teacher-name {
-    font-family: OpenSans-Bold;
+.work-outer .work-image-wrap .work-image-wrap-inner .detail-teacher .info-teacher .teacher-name span,
+.work-outer .work-image-wrap .work-image-wrap-inner .detail-teacher .info-teacher .teacher-age span{
+    font-family: 'Open Sans', sans-serif;
     font-size: 22px;
     color: #fff;
-    font-style: normal;
-}
-
-.work-outer .work-image-wrap .work-image-wrap-inner .detail-teacher .info-teacher  .teacher-place, .work-outer .work-image-wrap .work-image-wrap-inner .detail-teacher .info-teacher .teacher-score {
-    font-size: 16px;
-    font-family: OpenSans-Semibold;
     font-style: normal;
 }
 
